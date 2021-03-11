@@ -6,6 +6,7 @@ defmodule ListFilter do
   end
 
   defp list_filter(string) do
+    # returns a map{:ok, value} or :error
     Integer.parse(string)
     |> handle_filter()
   end
